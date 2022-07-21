@@ -1,0 +1,280 @@
+@charset "utf-8";
+
+*{
+    color: #5c4837;
+}
+
+.gnb li:nth-child(7) a{
+    border-bottom: 1px solid #5c4837;
+    transition: none;
+} 
+
+main {
+    display: flex;
+    justify-content: flex-end;
+    width: 95vw;
+    margin-left: 5vw;
+}
+
+.type_list {
+    position: fixed;
+    top: 15vh;
+    left: 5vw;
+    max-width: 15vw;
+    padding-right: 5vw;
+} 
+
+.type_list ul {
+    padding: 1rem 0;
+    border-top: 2px solid #5c4837;
+    border-bottom: 1px solid #5c4837;
+    margin-bottom: 1rem;
+}
+
+.type_list a:hover {
+    font-weight: 400;
+    color: #000;
+}
+section {
+    max-width: 80vw;
+}
+
+section > div {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 12%;
+}
+
+.type_txt {
+    text-align: justify;
+}
+
+/* 이미지 공통 */
+.type_img img {
+    max-width: 100%;
+    height: auto;
+}
+.type_img img:nth-child(2){
+    display: none;
+}
+
+
+/* definition */
+#definition {
+    flex-direction: row-reverse;
+    /* background-color: aqua; */
+}
+
+#definition .type_txt {
+    width: 32%;
+    padding-right: 5%;
+}
+
+#definition .type_img {
+    width: 51%;
+}
+
+/* normal_skin*/
+#normal_skin {
+    flex-direction: row;
+}
+#normal_skin .type_img {
+    width: 46vw;
+}
+
+#normal_skin .type_txt {
+    width: 54vw;
+    padding: 0 5%;
+}
+
+/* oily_skin */
+#oily_skin {
+    flex-direction: row-reverse;
+}
+#oily_skin .type_txt{
+    width: 65%;
+    padding-right: 5%;
+}
+
+#oily_skin .type_img {
+    width: 35%;
+}
+
+#oily_skin .type_img img {
+    vertical-align: bottom;
+}
+
+/* dry_skin */
+#dry_skin {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#dry_skin .type_txt {
+    width: 84%;
+    padding: 0 5vw;
+}
+
+#dry_skin .type_img {
+    width: 100%;
+    margin: 5% 0;
+}
+
+/* complex_skin */
+#complex_skin {
+    flex-direction: row;
+}
+
+#complex_skin .type_txt {
+    width: 54%;
+    padding: 0 5%;
+}
+
+#complex_skin .type_img {
+    width: 46%;
+}
+
+#complex_skin .type_img img {
+    vertical-align: bottom;
+}
+
+/* find my skin type */
+
+#find {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #cbc1b2;
+    width: 100%;
+    padding: 8rem 0 8rem 18%;
+    margin-top: 12%;
+}
+
+#find .type_txt {
+    width: 32%;
+    padding-right: 5%;
+}
+
+#find .type_img {
+    width: 51%;
+}
+
+.back a{
+    display: inline-block;
+    margin: 30px;
+}
+
+
+@media screen and (max-width:1600px) {
+    main {
+        display: block;
+        width: 95vw;
+        margin-left: 5vw;
+    }
+
+    .type_list {
+        display: none;
+    }
+
+    section {
+        max-width: 100vw;
+    }
+
+    #definition .type_txt {
+        width: 49%;
+        padding-right: 5%;
+    }
+
+    #find {
+        padding: 8rem 0;
+    }
+
+    #find .type_txt {
+        width: 40%;
+        padding-right: 5%;
+    }
+    
+}
+
+
+@media screen and (max-width:1024px) {
+
+    /* 이미지 공통 */
+        .type_img img {
+        min-width: 100%;
+        height: auto;
+    }
+    .type_img img:nth-child(1){
+        display: none;
+    }
+
+    .type_img img:nth-child(2){
+        display: block;
+    }
+    
+    main {
+        display: block;
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    section > div {
+        display: block;
+        padding-top: 12%;
+    }
+
+    #definition .type_txt {
+        width: 100%;
+        padding: 5% 0;
+    }
+    #definition .type_img {
+        width: 100%;
+    }
+
+    #normal_skin .type_txt {
+        width: 100%;
+        padding: 5% 0;
+    }
+    #normal_skin .type_img {
+        width: 100%;
+    }
+
+    #oily_skin .type_txt {
+        width: 100%;
+        padding: 5% 0;
+    }
+    #oily_skin .type_img {
+        width: 100%;
+    }
+
+    #dry_skin .type_txt {
+        width: 100%;
+        padding: 5% 0;
+    }
+    #dry_skin .type_img {
+        width: 100%;
+    }
+
+    #complex_skin .type_txt {
+        width: 100%;
+        padding: 5% 0;
+    }
+    #complex_skin .type_img {
+        width: 100%;
+    }
+
+    #find {
+        display: block;
+        padding: 5% 0;
+    }
+
+    #find .type_txt {
+        width: 90vw;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    #find .type_img {
+        width: 90vw;
+        margin: 0 auto;
+    }
+}

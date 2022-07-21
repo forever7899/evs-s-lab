@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+*{
+    color: #5c4837;
+}
+
+.gnb li:nth-child(6) a{
+    border-bottom: 1px solid #5c4837;
+    transition: none;
+} 
+
+main {
+    display: flex;
+    justify-content: flex-end;
+    width: 95vw;
+    margin-left: 5vw;
+}
+
+article {
+    padding: 30vh 5vw;
+    background: url(../images/myskintype00.jpg) no-repeat  right bottom /cover;
+}
+
+.subject {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.ask {
+
+    padding: 5vw;
+
+}
+
+.selection_area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.list{
+    position: relative;
+    height: 450px;
+    padding: 5vw;
+    /* background-color: coral; */
+}
+
+.list:hover {
+    background-color: #e1d4c8;
+}
+
+.skin_type p {
+    height: 30vh;
+}
+
+.btn {
+    position: absolute;
+    bottom: 80px;
+}
+
+#skin_trouble {
+    background-color: #dbcabc;
+}
+
+@media screen and (max-width:768px){
+    .subject {
+        display: block;
+    }
+    p{
+        font-size: 1rem;
+    }
+}

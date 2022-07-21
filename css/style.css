@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+
+ /* main */
+
+main {
+    width: 100%;
+}
+
+header {
+    border: 2px;
+}
+.main_menu li a {
+    box-sizing:content-box;
+    border-bottom : 2px solid #eee9e1;
+}
+
+.main_menu li a:hover {
+    border-bottom : 2px solid #5c4837;
+}
+
+/* 슬라이드 */
+.slide_area {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 80px;
+}
+
+@keyframes move {
+    from {display: none; opacity: 0; left: -200px;}
+    to {opacity: 1; left:0}
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: calc(930/1920*40%) 5%;
+    color: #fff;
+    transition: 1s;
+    animation: move 0.3s ease-out 0s 1 normal ;
+}
+
+.intro01 {
+    background: url(../images/intro01.jpg) no-repeat center / cover;
+}
+.intro02 {
+    background: url(../images/intro02.jpg) no-repeat center / cover;
+}
+.intro03 {
+    background: url(../images/intro03.jpg) no-repeat center / cover;
+}
+
+.slide h2 {
+    position: relative;
+    padding-bottom: 50px;
+    
+    animation: move 0.6s ease-out 0s 1 normal ;
+}
+
+.slide p {
+    position: relative;
+    color: #fff;
+    white-space: pre-line;
+}
+
+.slide .btn a {
+    position: relative;
+    color: #fff;
+    border-color: #fff;
+
+    animation: move 0.9s ease-out 0s 1 normal ;
+}
+
+/* 앰플제품진열 */
+
+.product {
+    padding: 0 5vw;
+}
+
+.pro_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.pro_list li a {
+    display: block;
+    width: 100%;
+    min-width: 200px;
+    color: #333;
+    padding: 0 2vw;
+    border-bottom: 2px solid #d1c8bb;
+
+    transition: border-bottom 1s ease-out;
+
+}
+
+.pro_list li a:hover {
+    border-bottom: 2px solid #5c4837 ;
+}
+
+.pro_list li p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+.pro_list li img {
+    display: block;
+    margin: 0 auto;
+    height: 380px;
+}
+
+/* 원료소개 */
+.material {
+    margin: 160px 0;
+}
+
+.mt_txt{
+    width: 80%;
+    margin: 5vw;
+
+}
+
+.mt_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60vh;
+    width: 100%;
+}
+
+.mt_list > div {
+    padding: 5vh 5vw;
+}
+.mt_list span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.detailview {
+    position: relative;
+    left: 3px;
+    font-size: 0.8rem;
+    width: 20%;
+    line-height: 1.5rem;
+    opacity: 0.6;
+    transition: opacity 0.5s;
+
+}
+.detailview a {
+    padding-top: 1.5vh;
+    color: #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.detailview::after {
+    position: absolute;
+    right:-1px;
+    bottom:6px;
+    display: block;
+    width: 15px;
+    content: "";
+    border-bottom: 1px solid #eee;
+    transform: rotate(45deg);
+
+}
+
+.detailview:hover {
+    opacity: 1;
+}
+
+.mat01 {
+    background: url(../images/mat01.jpg) no-repeat center /cover;
+}
+
+.mat02 {
+    background: url(../images/mat02.jpg) no-repeat center /cover;
+}
+
+
+/* 허브워터, 연구실소개 */
+.subject {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-gap: 5vw;
+    margin: 200px 0 120px 5%;
+}
+
+.sub_txt {
+    padding-bottom: 50px;
+}
+
+.sub_img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.subject::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* 가로 1920이상일때 */
+@media screen and (max-width: 10000px) {
+
+    .slide_01 {
+        height: 850px;
+        padding: 0 5%;
+    }
+
+}
+
+/* 가로 1920이하일때 */
+@media screen and (max-width: 1920px) {
+    .slide_01 {
+        height: 40%;
+        padding: calc(11%) 5%;
+    }
+}
+
+/* 가로 1920이하일때 */
+@media screen and (max-width:1024px) {
+    .subject {
+        display: block;
+    }
+
+    .sub_img {
+        width: 90vw;
+        height: 50% ;
+    }
+}
+
+/* 가로 768이하일때 */
+@media screen and (max-width:768px) {
+}
+
+.main_menu li a {
+    border-bottom : 0;
+}
+
+.main_menu li a:hover {
+    border-bottom : 0;
+}
+
+.slide h2 {
+    font-size: 2rem;
+    padding-bottom: 1.6rem;
+}
+
+.slide p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
+
+.slide .btn {
+    transform: scale(80%);
+    transform-origin: left;
+}
+
+.intro01 {
+    background-position: 60% top;
+}

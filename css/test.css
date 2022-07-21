@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.gnb li:nth-child(7) a{
+    border-color: #5c4837;
+    transition: none;
+} 
+
+.type_list {
+    float: left;
+}

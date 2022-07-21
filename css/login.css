@@ -1,0 +1,35 @@
+@charset "utf-8";
+.wrapper{
+    width: 550px;
+}
+input{
+    width: 100%;
+    background-color: transparent ;
+    border:0;
+    border-bottom: 1px solid #bbb1a2;
+    font-size: 1.2em;
+    line-height: 50px;
+    outline-style:none;
+}
+
+fieldset {
+    border: 0;
+    padding:50px;
+}
+
+fieldset li {
+    margin-top: 50px;
+}
+
+.close {
+    float: right;
+}
+p {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.btn a{
+    width: 100%;
+    text-align: center;
+}

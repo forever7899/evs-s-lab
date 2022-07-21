@@ -1,0 +1,84 @@
+@charset "utf-8";
+.soap_head {
+    width: 100%;
+    height: 800px;
+    padding-left: 5%;
+    background: url(../images/soap00.jpg) no-repeat  center / cover;
+}
+
+.soap_head div {
+    width: 30%;
+    padding-top: 30vh;
+}
+
+.type_list {
+    position: sticky;
+    top: 100px;
+    float: left;
+}
+.b {
+    /* float: right; */
+    width: 80%;
+    margin-left: 20%;
+    height: 2000px;
+    background-color: rgb(177, 139, 125);
+}
+
+main {
+    /* float: right; */
+    width: 80vw;
+    margin-left: 20%;
+    /* overflow:auto; */
+}
+
+main::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.type_list {
+    position: sticky;
+    top: 100px;
+    left: 5vw;
+    max-width: 15vw;
+    padding-top: 50px;
+    /* float: left; */
+
+} 
+
+.type_list ul {
+    padding: 1rem 0;
+    border-top: 2px solid #5c4837;
+    border-bottom: 1px solid #5c4837;
+    margin-bottom: 1rem;
+}
+
+.type_list a:hover {
+    font-weight: 400;
+    color: #000;
+}
+section {
+    max-width: 80vw;
+    /* margin-left: 20vw; */
+}
+
+section > div {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 12%;
+}
+
+.type_txt {
+    text-align: justify;
+}
+
+/* 이미지 공통 */
+.type_img img {
+    max-width: 100%;
+    height: auto;
+}
+.type_img img:nth-child(2){
+    display: none;
+}
+
